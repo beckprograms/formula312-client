@@ -38,9 +38,7 @@ export default function LandingContainer() {
             fontWeight: "700",
             textAlign: "center",
           }}
-        >
-          Width 75%
-        </Box>
+        ></Box>
         {medShowFullSize ? (
           <Box
             sx={{
