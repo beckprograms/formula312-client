@@ -8,9 +8,12 @@ import { Stack } from "@mui/material";
 import { CardHeader } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
+import { Tabs } from "../Tabs";
+
 export default function LandingContainer() {
   const medShowFullSize = useMediaQuery("(min-width:1200px)");
   const [showItem, setShowItem] = useState(false);
+  const [hideCreditBilling, setHideCreditBilling] = useState(true);
   return (
     <Box
       sx={{
@@ -37,9 +40,12 @@ export default function LandingContainer() {
             fontSize: "0.875rem",
             fontWeight: "700",
             textAlign: "center",
+            backgroundColor: "#F5F5F5",
           }}
-        ></Box>
-        {medShowFullSize ? (
+        >
+          <Tabs />
+        </Box>
+        {/* {medShowFullSize ? (
           <Box
             sx={{
               width: "40%",
@@ -87,7 +93,7 @@ export default function LandingContainer() {
               </div>
             )}
           </Box>
-        )}
+        )} */}
       </Stack>
       <Box
         component="footer"
