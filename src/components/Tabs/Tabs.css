@@ -1,0 +1,15 @@
+.whiteBackground {
+  background-color: white;
+}
+
+.smallTitle {
+  font-size: 8px;
+  margin: 0;
+  padding: 0;
+  color: gray;
+}
+
+.mainTitle {
+  padding: 2px;
+  margin: 0;
+}
