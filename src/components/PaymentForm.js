@@ -37,10 +37,13 @@ export default function PaymentForm() {
     if (!error) {
       try {
         const { id } = paymentMethod;
-        const response = await axios.post("http://localhost:4000/payment", {
-          amount: 25000,
-          id,
-        });
+        const response = await axios.post(
+          "https://oyster-app-6q5gi.ondigitalocean.app/payment",
+          {
+            amount: 99000,
+            id,
+          }
+        );
 
         if (response.data.success) {
           console.log("Successful payment");
