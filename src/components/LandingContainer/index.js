@@ -45,7 +45,7 @@ export default function LandingContainer() {
         >
           <Tabs />
         </Box>
-        {/* {medShowFullSize ? (
+        {medShowFullSize ? (
           <Box
             sx={{
               width: "40%",
@@ -93,7 +93,7 @@ export default function LandingContainer() {
               </div>
             )}
           </Box>
-        )} */}
+        )}
       </Stack>
       <Box
         component="footer"

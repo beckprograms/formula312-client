@@ -6,7 +6,7 @@ const ServiceOption = ({ title, cost }) => {
     <div className="serviceOptionContainer">
       <div className="titleAndCost">
         <span>{title}</span>
-        <span>${cost}</span>
+        <span id="singleItemCost">${cost}</span>
       </div>
       <input type={"checkbox"} />
     </div>
