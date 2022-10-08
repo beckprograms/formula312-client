@@ -40,7 +40,7 @@ export default function PaymentForm() {
         const response = await axios.post(
           "https://oyster-app-6q5gi.ondigitalocean.app/payment",
           {
-            amount: 99000,
+            amount: 89000,
             id,
           }
         );
