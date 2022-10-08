@@ -13,7 +13,6 @@ import { Tabs } from "../Tabs";
 export default function LandingContainer() {
   const medShowFullSize = useMediaQuery("(min-width:1200px)");
   const [showItem, setShowItem] = useState(false);
-  const [hideCreditBilling, setHideCreditBilling] = useState(true);
   return (
     <Box
       sx={{
@@ -61,7 +60,7 @@ export default function LandingContainer() {
               <StripeContainer />
             ) : (
               <div className="carDetail">
-                <h3>$250.00</h3>
+                {/* <h3>$250.00</h3> */}
 
                 <button onClick={() => setShowItem(true)}>
                   Get car detailing
@@ -85,7 +84,7 @@ export default function LandingContainer() {
               <StripeContainer />
             ) : (
               <div className="carDetail">
-                <h3>$250.00</h3>
+                {/* <h3>$250.00</h3> */}
 
                 <button onClick={() => setShowItem(true)}>
                   Get car detailing
