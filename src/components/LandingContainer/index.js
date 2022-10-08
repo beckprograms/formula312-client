@@ -23,7 +23,7 @@ export default function LandingContainer() {
       }}
     >
       <CardHeader
-        title="MobiSpark"
+        title="Formula312"
         subheader="One click order from the comfort of your home"
       />
 
@@ -108,7 +108,7 @@ export default function LandingContainer() {
         }}
       >
         <Container maxWidth="sm">
-          <Typography variant="body1">MobiSpark</Typography>
+          <Typography variant="body1">Formula312</Typography>
           <Copyright />
         </Container>
       </Box>
@@ -121,7 +121,7 @@ const Copyright = () => {
     <Typography variant="body2" color="text.secondary">
       {"Copyright © "}
       <Link color="inherit" href="https://mui.com/">
-        www.MobiSpark.com{" "}
+        www.Formula312.com{" "}
       </Link>
       {new Date().getFullYear()}
     </Typography>
