@@ -5,11 +5,10 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { Stack } from "@mui/material";
-import { CardHeader } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { Tabs } from "../Tabs";
-
+import { Header } from "../Header";
 export default function LandingContainer() {
   const medShowFullSize = useMediaQuery("(min-width:1200px)");
   const [showItem, setShowItem] = useState(false);
@@ -21,11 +20,7 @@ export default function LandingContainer() {
         minHeight: "100vh",
       }}
     >
-      <CardHeader
-        title="Formula312"
-        subheader="One click order from the comfort of your home"
-      />
-
+      <Header />
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={{ xs: 1, sm: 2, md: 4 }}
