@@ -9,6 +9,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { Tabs } from "../Tabs";
 import { Header } from "../Header";
+import { Footer } from '../Footer';
+
 export default function LandingContainer() {
   const medShowFullSize = useMediaQuery("(min-width:1200px)");
   const [showItem, setShowItem] = useState(false);
@@ -102,8 +104,7 @@ export default function LandingContainer() {
         }}
       >
         <Container maxWidth="sm">
-          <Typography variant="body1">Formula312</Typography>
-          <Copyright />
+          <Footer />
         </Container>
       </Box>
     </Box>
