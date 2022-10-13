@@ -9,7 +9,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { Tabs } from "../Tabs";
 import { Header } from "../Header";
-import { Footer } from '../Footer';
+import { Footer } from "../Footer";
 
 export default function LandingContainer() {
   const medShowFullSize = useMediaQuery("(min-width:1200px)");
@@ -59,7 +59,7 @@ export default function LandingContainer() {
               <div className="carDetail">
                 {/* <h3>$250.00</h3> */}
 
-                <button onClick={() => setShowItem(true)}>
+                <button id="stripeButton" onClick={() => setShowItem(true)}>
                   Get car detailing
                 </button>
               </div>
@@ -83,7 +83,7 @@ export default function LandingContainer() {
               <div className="carDetail">
                 {/* <h3>$250.00</h3> */}
 
-                <button onClick={() => setShowItem(true)}>
+                <button id="stripeButton" onClick={() => setShowItem(true)}>
                   Get car detailing
                 </button>
               </div>
@@ -97,10 +97,7 @@ export default function LandingContainer() {
           py: 3,
           px: 2,
           mt: "auto",
-          backgroundColor: (theme) =>
-            theme.palette.mode === "light"
-              ? theme.palette.grey[200]
-              : theme.palette.grey[800],
+          backgroundColor: "#212E52",
         }}
       >
         <Container maxWidth="sm">
@@ -110,15 +107,3 @@ export default function LandingContainer() {
     </Box>
   );
 }
-
-const Copyright = () => {
-  return (
-    <Typography variant="body2" color="text.secondary">
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        www.Formula312.com{" "}
-      </Link>
-      {new Date().getFullYear()}
-    </Typography>
-  );
-};
