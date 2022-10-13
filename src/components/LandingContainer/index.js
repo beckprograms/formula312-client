@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import StripeContainer from "../StripeContainer";
+
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
-import { Stack } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
+
+import { Stack } from "@mui/material";
 
 import { Tabs } from "../Tabs";
 import { Header } from "../Header";
@@ -26,6 +26,7 @@ export default function LandingContainer() {
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={{ xs: 1, sm: 2, md: 4 }}
+        height={"100vh"}
       >
         <Box
           sx={{
