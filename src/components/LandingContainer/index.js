@@ -11,7 +11,7 @@ import { Tabs } from "../Tabs";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
 
-export default function LandingContainer() {
+export default function LandingContainer({ signOut }) {
   const medShowFullSize = useMediaQuery("(min-width:1200px)");
   const [showItem, setShowItem] = useState(false);
   return (
@@ -23,7 +23,7 @@ export default function LandingContainer() {
         minHeight: "100vh",
       }}
     >
-      <Header />
+      <Header signOut={signOut} />
 
       {/* <Stack
         direction={{ xs: "column", sm: "row" }}
