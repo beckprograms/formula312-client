@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { LargeCard } from "../../Card/LargeCard";
+import dataSource from "./dataSource.json";
+
 import "./ProWash.css";
 
 export const ProWash = ({ data }) => {
@@ -13,7 +17,10 @@ export const ProWash = ({ data }) => {
   };
 
   return (
-    <div className="proWashContainer">
+    <div
+      className="proWashContainer mainCostIndicator"
+      style={{ backgroundColor: "#EEE" }} // e9f9f4
+    >
       Pro wash details
       <p>Total: ${checked.reduce((sum, { cost }) => sum + cost, 0)}</p>
       {data?.map((service, index) => (
@@ -25,13 +32,40 @@ export const ProWash = ({ data }) => {
           handleTotalCost={handleTotalCost}
         />
       ))}
+      {dataSource.data.map(
+        (
+          {
+            title,
+            location,
+            image,
+            rate,
+            promoRate,
+            basePrice,
+            promoContentBottom,
+            promoContentTop,
+          },
+          key
+        ) => (
+          <LargeCard
+            key={key}
+            title={title}
+            contentText={location}
+            image={image}
+            rate={rate}
+            promoRate={promoRate}
+            basePrice={basePrice}
+            promoContentTop={promoContentTop}
+            promoContentBottom={promoContentBottom}
+          />
+        )
+      )}
     </div>
   );
 };
 
-const ServiceOption = ({ title, cost, handleTotalCost, service }) => {
+const ServiceOption = ({ title, cost, handleTotalCost, service, index }) => {
   return (
-    <div className="serviceOptionContainer">
+    <div className="serviceOptionContainer" key={index}>
       <div className="titleAndCost">
         <span>{title}</span>
         <span id="singleItemCost">${cost}</span>
