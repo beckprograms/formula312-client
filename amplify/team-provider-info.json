@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mobisparkclient-dev-135111-authRole",
+      "UnauthRoleArn": "arn:aws:iam::293241115782:role/amplify-mobisparkclient-dev-135111-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::293241115782:role/amplify-mobisparkclient-dev-135111-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mobisparkclient-dev-135111-deployment",
+      "UnauthRoleName": "amplify-mobisparkclient-dev-135111-unauthRole",
+      "StackName": "amplify-mobisparkclient-dev-135111",
+      "StackId": "arn:aws:cloudformation:us-east-1:293241115782:stack/amplify-mobisparkclient-dev-135111/73a00b70-691d-11ed-b08a-1216fa73ee63",
+      "AmplifyAppId": "d458ybivzsaln"
+    },
+    "categories": {
+      "auth": {
+        "mobisparkclient9e69977a": {}
+      }
+    }
+  }
+}

@@ -1,6 +1,12 @@
 .proWashContainer {
   background-color: white;
-  margin: 2px 0;
+  margin: 2px;
+  padding-right: 2px;
+}
+
+.mainCostIndicator {
+  align-items: center;
+  padding-right: 2px;
 }
 
 .serviceOptionContainer {

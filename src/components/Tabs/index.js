@@ -19,7 +19,7 @@ export const Tabs = () => {
       <div style={tabsContainer}>
         <div
           style={basicWashStyles}
-          className={active === "left" ? "whiteBackground" : "#EEE"}
+          className={active === "left" ? "#EEE" : "whiteBackground"}
           onClick={() => setActive("left")}
         >
           <p className="mainTitle">Basic wash</p>
@@ -27,7 +27,7 @@ export const Tabs = () => {
         </div>
         <div
           style={proWashStyles}
-          className={active === "right" ? "whiteBackground" : "#EEE"}
+          className={active === "right" ? "#EEE" : "whiteBackground"}
           onClick={() => setActive("right")}
         >
           <p className="mainTitle">Pro wash</p>

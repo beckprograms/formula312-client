@@ -11,7 +11,7 @@ import { Tabs } from "../Tabs";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
 
-export default function LandingContainer() {
+export default function LandingContainer({ signOut }) {
   const medShowFullSize = useMediaQuery("(min-width:1200px)");
   const [showItem, setShowItem] = useState(false);
   return (
@@ -19,11 +19,13 @@ export default function LandingContainer() {
       sx={{
         display: "flex",
         flexDirection: "column",
+        justifyContent: "space-between",
         minHeight: "100vh",
       }}
     >
-      <Header />
-      <Stack
+      <Header signOut={signOut} />
+
+      {/* <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={{ xs: 1, sm: 2, md: 4 }}
         height={"100vh"}
@@ -42,7 +44,27 @@ export default function LandingContainer() {
         >
           <Tabs />
         </Box>
-        {medShowFullSize ? (
+      </Stack> */}
+      <Tabs />
+      <Box
+        component="footer"
+        sx={{
+          py: 3,
+          px: 2,
+          mt: "auto",
+          backgroundColor: "#212E52",
+        }}
+      >
+        <Container maxWidth="sm">
+          <Footer />
+        </Container>
+      </Box>
+    </Box>
+  );
+}
+
+/*
+ {medShowFullSize ? (
           <Box
             sx={{
               width: "40%",
@@ -58,8 +80,6 @@ export default function LandingContainer() {
               <StripeContainer />
             ) : (
               <div className="carDetail">
-                {/* <h3>$250.00</h3> */}
-
                 <button id="stripeButton" onClick={() => setShowItem(true)}>
                   Get car detailing
                 </button>
@@ -82,29 +102,11 @@ export default function LandingContainer() {
               <StripeContainer />
             ) : (
               <div className="carDetail">
-                {/* <h3>$250.00</h3> */}
-
                 <button id="stripeButton" onClick={() => setShowItem(true)}>
                   Get car detailing
                 </button>
               </div>
             )}
           </Box>
-        )}
-      </Stack>
-      <Box
-        component="footer"
-        sx={{
-          py: 3,
-          px: 2,
-          mt: "auto",
-          backgroundColor: "#212E52",
-        }}
-      >
-        <Container maxWidth="sm">
-          <Footer />
-        </Container>
-      </Box>
-    </Box>
-  );
-}
+        )} 
+*/
