@@ -103,11 +103,10 @@ export const LargeCard = ({
             alignItems: "flex-start",
           }}
         >
-          <div style={{ width: "150px", backgroundColor: "red" }}>
+          <div style={{ width: "150px" }}>
             <div
               style={{
                 width: "30%",
-                backgroundColor: "",
                 borderRadius: "7px",
               }}
             >
@@ -125,7 +124,6 @@ export const LargeCard = ({
               fontSize: "16px",
               fontWeight: "bold",
               paddingLeft: "5px",
-              backgroundColor: "",
             }}
             className="font-link"
           >
@@ -154,7 +152,7 @@ export const LargeCard = ({
             </div>
           </div>
         </div>
-        <div style={{ backgroundColor: "", margin: "5px" }}>
+        <div style={{ margin: "5px" }}>
           {servicesPills.map((service, index) => (
             <span key={index}>
               <SpanPill service={service} />
