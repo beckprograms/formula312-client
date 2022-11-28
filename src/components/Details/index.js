@@ -51,49 +51,7 @@ export const Details = (props) => {
         <div>
           <GenericButton>{`Book for $${promoRate}`}</GenericButton>
         </div>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <button style={stickyButton}>test</button>
+       
       </div>
     </div>
   );
