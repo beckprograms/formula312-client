@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { LargeCard } from "../../Card/LargeCard";
 import dataSource from "./dataSource.json";
 
@@ -43,6 +42,7 @@ export const ProWash = ({ data }) => {
             basePrice,
             promoContentBottom,
             promoContentTop,
+            fullAddress,
           },
           key
         ) => (
@@ -56,6 +56,7 @@ export const ProWash = ({ data }) => {
             basePrice={basePrice}
             promoContentTop={promoContentTop}
             promoContentBottom={promoContentBottom}
+            fullAddress={fullAddress}
           />
         )
       )}
