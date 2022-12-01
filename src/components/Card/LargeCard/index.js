@@ -70,6 +70,7 @@ export const LargeCard = ({
   promoContentTop,
   promoContentBottom,
   fullAddress,
+  serviceTypes,
 }) => {
   return (
     <Link
@@ -85,6 +86,7 @@ export const LargeCard = ({
           promoContentTop,
           promoContentBottom,
           fullAddress,
+          serviceTypes,
         },
       }}
     >
