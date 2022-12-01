@@ -43,6 +43,7 @@ export const ProWash = ({ data }) => {
             promoContentBottom,
             promoContentTop,
             fullAddress,
+            serviceTypes,
           },
           key
         ) => (
@@ -57,6 +58,7 @@ export const ProWash = ({ data }) => {
             promoContentTop={promoContentTop}
             promoContentBottom={promoContentBottom}
             fullAddress={fullAddress}
+            serviceTypes={serviceTypes}
           />
         )
       )}

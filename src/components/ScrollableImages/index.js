@@ -37,7 +37,7 @@ class ScrollableImages extends React.Component {
     return (
       <div style={Content}>
         {photo.map((item) => (
-          <img src={item.src} alt="pictures" />
+          <img src={item.src} alt="pictures" style={{ padding: "1px" }} />
         ))}
       </div>
     );

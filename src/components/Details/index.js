@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import ScrollableImages from "../ScrollableImages/index";
 
 import { GenericButton } from "../Buttons/GenericButton";
+import ServiceCard from "../ServiceCard";
 
 const stickyButton = {
   position: "absolute",
@@ -27,6 +28,7 @@ export const Details = (props) => {
     promoContentTop,
     promoContentBottom,
     fullAddress,
+    serviceTypes,
   } = data.state.state;
   return (
     <div
@@ -52,48 +54,7 @@ export const Details = (props) => {
           <GenericButton>{`Book for $${promoRate}`}</GenericButton>
         </div>
         <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <p className="included-text">What is included:</p>
-        <button style={stickyButton}>test</button>
+        <ServiceCard serviceTypes={serviceTypes} />
       </div>
     </div>
   );
