@@ -20,16 +20,16 @@ export const Footer = () => {
         }}
       >
         <div style={{ color: "white" }}>
-          Call us:
-          <p style={{ margin: 0, padding: 0, color: "white" }}>
+          Call us:{" "}
+          <span style={{ margin: 0, padding: 0, color: "white" }}>
             +1 (917) 376-3763
-          </p>
+          </span>
         </div>
         <div style={{ color: "white" }}>
-          Email us:
-          <p style={{ margin: 0, padding: 0, color: "white" }}>
+          Email us:{" "}
+          <span style={{ margin: 0, padding: 0, color: "white" }}>
             help@Formula312.com
-          </p>
+          </span>
         </div>
       </div>
       <div

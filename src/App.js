@@ -27,11 +27,16 @@ const Home = () => {
 
 function App() {
   const { authStatus } = useAuthenticator((context) => [context.authStatus]);
-  // Use the value of authStatus to decide which page to render
+
   return (
     <>
-      {authStatus === "configuring" && "Loading..."}
-      {authStatus !== "authenticated" ? <AppAuthenticator /> : <Home />}
+      {authStatus === "configuring" ? (
+        "Loading..."
+      ) : authStatus !== "authenticated" ? (
+        <AppAuthenticator />
+      ) : (
+        <Home />
+      )}
     </>
   );
 }

@@ -16,10 +16,7 @@ export const ProWash = ({ data }) => {
   };
 
   return (
-    <div
-      className="proWashContainer mainCostIndicator"
-      style={{ backgroundColor: "#EEE" }} // e9f9f4
-    >
+    <div className="proWashContainer mainCostIndicator">
       Pro wash details
       <p>Total: ${checked.reduce((sum, { cost }) => sum + cost, 0)}</p>
       {data?.map((service, index) => (

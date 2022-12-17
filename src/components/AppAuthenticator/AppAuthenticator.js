@@ -116,10 +116,15 @@ const theme = {
 export const AppAuthenticator = () => {
   return (
     <div className="authenticator-root">
-      <div className="authenticator-card">
-        <ThemeProvider theme={theme}>
-          <Authenticator />
-        </ThemeProvider>
+      <div className="authenticator-section">
+        <div className="logo-section">
+          <h1 className="logo-text">Formula312</h1>
+        </div>
+        <div className="authenticator-card">
+          <ThemeProvider theme={theme}>
+            <Authenticator />
+          </ThemeProvider>
+        </div>
       </div>
     </div>
   );
