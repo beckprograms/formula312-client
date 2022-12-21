@@ -19,6 +19,19 @@ export const AppFooter = () => {
   return (
     <Box component="footer" className="app-footer">
       <Container maxWidth="lg">
+        <Box sx={{ textAlign: "center", my: 1 }}>
+          <span style={{ fontSize: "18px", color: "white" }}>
+            Register for free:
+          </span>
+          <Button
+            variant="contained"
+            color="error"
+            sx={{ backgroundColor: "#fa2a55", m: 1 }}
+            onClick={handleSignUpClick}
+          >
+            Sign Up!
+          </Button>
+        </Box>
         <Box
           sx={{
             display: "flex",
@@ -54,22 +67,6 @@ export const AppFooter = () => {
             <span>+1 (917) 376-3763</span>
           </Link>
         </Box>
-
-        <Box sx={{ textAlign: "center", my: 1 }}>
-          <span style={{ fontSize: "18px", color: "white" }}>
-            Register for free:
-          </span>
-
-          <Button
-            variant="contained"
-            color="error"
-            sx={{ backgroundColor: "#fa2a55", m: 1 }}
-            onClick={handleSignUpClick}
-          >
-            Sign Up!
-          </Button>
-        </Box>
-
         <div className="footer-bottom-section">
           <div className="copy-rights-section">
             <a href="/" className="logo-link">
