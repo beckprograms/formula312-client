@@ -1,5 +1,6 @@
 import { Authenticator, ThemeProvider } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
+import { AppFooter } from "../AppLayout/AppFooter";
 import "./authenticator.styles.css";
 
 const theme = {
@@ -125,6 +126,8 @@ export const AppAuthenticator = () => {
             <Authenticator />
           </ThemeProvider>
         </div>
+        <br />
+        <AppFooter />
       </div>
     </div>
   );

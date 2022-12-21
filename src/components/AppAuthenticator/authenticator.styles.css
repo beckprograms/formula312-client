@@ -1,8 +1,6 @@
 .authenticator-root {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
   background-color: #172b4d !important;
 }
 
@@ -18,6 +16,7 @@
   color: #fff;
   font-size: 3em;
   font-weight: 600;
+  text-align: center;
 }
 
 .authenticator-root .authenticator-card {
