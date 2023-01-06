@@ -20,15 +20,11 @@ export const AppRoutes = () => {
         <Route path="/basic-wash" element={<BasicWash />} />
         <Route path="/pro-wash" element={<ProWash />} />
         <Route
-          path="/basic-wash/:serviceId/details"
+          path="/:category/:serviceId/details"
           element={<ServiceDetails />}
         />
         <Route
-          path="/pro-wash/:serviceId/details"
-          element={<ServiceDetails />}
-        />
-        <Route
-          path="/:categoryType/:serviceId/payment"
+          path="/:category/:serviceId/payment"
           element={<PaymentContainer />}
         />
       </Routes>

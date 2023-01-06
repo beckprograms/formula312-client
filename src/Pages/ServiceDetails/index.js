@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Rating from "@mui/material/Rating";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { ImageSlider } from "../../components/ImageSlider";
 import { PlansSelection } from "../../components/PlansSelection";
 
@@ -27,12 +27,12 @@ const images = [
 
 export const ServiceDetails = () => {
   const data = useLocation();
+  const { serviceId, category } = useParams();
   const navigate = useNavigate();
   const { title, rate, fullAddress, promoRate, serviceTypes } = data.state;
 
   const handleBookCarWash = () => {
-    console.log("Data ......", data);
-    navigate(`/pro-wash/1/payment`, { state: data.state });
+    navigate(`/${category}/${serviceId}/payment`, { state: data.state });
   };
 
   return (
